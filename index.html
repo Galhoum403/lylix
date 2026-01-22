@@ -11,6 +11,20 @@
     
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css"> 
+    
+    <style>
+        .social-icon:hover {
+            transform: translateY(-5px);
+            color: var(--primary) !important;
+            filter: drop-shadow(0 0 5px var(--primary));
+        }
+        .video-btn-new:hover {
+            background: rgba(255, 255, 255, 0.1) !important;
+            border-color: var(--primary) !important;
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 243, 255, 0.15);
+        }
+    </style>
 </head>
 
 <body>
@@ -44,10 +58,61 @@
             </a>
         </div>
 
-        <p style="margin-top: 15px; font-size: 0.9rem; color: #00f3ff; text-shadow: 0 0 10px rgba(0,243,255,0.3);">
-            * التفعيل التجريبي متاح لفترة محدودة لتجربة كفاءة البرنامج.
+        <p style="margin-top: 10px; font-size: 0.8rem; color: rgba(0,243,255,0.7);">
+            * التفعيل التجريبي متاح لفترة محدودة.
         </p>
-        </section>
+
+        <div style="width: 100px; height: 1px; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent); margin: 30px auto;"></div>
+
+        <div class="social-icons-container" style="display: flex; gap: 20px; justify-content: center; align-items: center; margin-bottom: 25px;">
+            <a href="#" target="_blank" class="social-icon" style="color: #fff; transition: 0.3s;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                </svg>
+            </a>
+            <a href="#" target="_blank" class="social-icon" style="color: #fff; transition: 0.3s;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.415c-.066-.246-.115-.56-.153-.885-.037-.326-.06-.688-.078-1.077a29.07 29.07 0 0 1-.027-1.153l-.004-.122a26.883 26.883 0 0 1-.002-.234v-.118c.002-.55.012-1.19.033-1.802.014-.413.037-.803.069-1.134.032-.332.083-.65.155-.898a2.007 2.007 0 0 1 1.415-1.415c1.16-.312 5.569-.334 6.18-.335h.142c.309 0 1.587.006 2.927.052l.17.006.087.004.171.007.171.007c1.11.049 2.167.128 2.654.26zM5.4 6.1l4.912 2.695-4.912 2.694V6.1z"/>
+                </svg>
+            </a>
+            <a href="#" target="_blank" class="social-icon" style="color: #fff; transition: 0.3s;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+                </svg>
+            </a>
+        </div>
+
+        <a href="#" target="_blank" class="video-btn-new" style="
+            display: inline-flex; 
+            align-items: center; 
+            gap: 10px; 
+            background: rgba(255, 255, 255, 0.05); 
+            padding: 12px 30px; 
+            border-radius: 50px; 
+            text-decoration: none; 
+            color: white; 
+            border: 1px solid rgba(255, 255, 255, 0.2); 
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        ">
+            <div style="
+                width: 30px; 
+                height: 30px; 
+                background: var(--primary); 
+                border-radius: 50%; 
+                display: flex; 
+                align-items: center; 
+                justify-content: center;
+                box-shadow: 0 0 10px var(--primary);
+            ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#050b14" viewBox="0 0 16 16">
+                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                </svg>
+            </div>
+            <span style="font-weight: 500; letter-spacing: 0.5px;">شاهد شرح البرنامج</span>
+        </a>
+    </section>
 
     <section class="features-section">
         <h2 class="section-title">المميزات <span>المتاحة الآن</span></h2>
